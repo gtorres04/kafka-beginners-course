@@ -58,7 +58,6 @@ public class ConsumerDemoWithShutdown {
 
             // Sondear para obtener nuevos datos
             while (true) {
-                log.info("Polling");
                 ConsumerRecords<String, String> consumerRecords = consumer.poll(Duration.ofMillis(100));
                 consumerRecords.forEach(consumerRecord -> log.info("Key: {}\n" +
                         "Value: {}\n" +
