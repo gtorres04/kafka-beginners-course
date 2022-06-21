@@ -460,3 +460,10 @@ NAME                COMMAND                  SERVICE             STATUS         
 kafka1              "/etc/confluent/dock…"   kafka1              running             0.0.0.0:9092->9092/tcp, 0.0.0.0:9999->9999/tcp
 zoo1                "/etc/confluent/dock…"   zoo1                running             0.0.0.0:2181->2181/tcp
 ```
+Ingresar al contenedor Kafka
+```
+gerlinorlandotorres@MacBook-Pro-de-Gerlin kafka-beginners-course % docker exec -it kafka1 /bin/bash
+[appuser@kafka1 ~]$ kafka-topics --version
+7.1.1-ccs (Commit:947fac5beb61836d)
+[appuser@kafka1 ~]$ 
+```
